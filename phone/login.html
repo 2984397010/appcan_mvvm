@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+    
+    <head>
+        <title>
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="css/ui-box.css">
+        <link rel="stylesheet" href="css/ui-base.css">
+        <link rel="stylesheet" href="css/ui-color.css">
+        <link rel="stylesheet" href="css/appcan.icon.css">
+        <link rel="stylesheet" href="css/appcan.control.css">
+        <link rel="stylesheet" href="./css/login.css">
+        <link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.css">
+        
+    </head>
+    
+    <body class="" ontouchstart>
+        <div class="bc-bg" tabindex="0" data-control="PAGE" id="Page_RxHF9J">
+            <div class="uh bc-head  ubb bc-border" data-control="HEADER" id="Header_GAmWuy">
+                <div class="ub">
+                    <div class="nav-btn" id="nav-left">
+                        <div class="fa fa-1g ub-img1">
+                        </div>
+                    </div>
+                    <h1 class="ut ub-f1 ulev-3 ut-s tx-c" tabindex="0">标题</h1>
+                    <div class="nav-btn" id="nav-right">
+                        <div class="fa  fa-1g  ub-img1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+           
+            <div class="bc-bg ub ub-ver ub-ac ub-con" data-control="FLEXBOXVER" id="ContentFlexVer_hTOHqG">
+                <div class="" data-control="BOX" id="Box_GNJm9S">
+                </div>
+                <div class="" data-control="BOX" id="Box_ScMUms">
+                </div>
+                <div class="uinput ub bc-border uba ub-ac" data-control="ICONINPUT" id="iconInput_zskoIz">
+                    <div class="uinn fa sc-text fa-user" data-control-icon="">
+                    </div>
+                    <input placeholder="" type="text" class="ub-f1" data-control-scope="iconInput_zskoIz" data-bind="value:username">
+                </div>
+                <div class="" data-control="BOX" id="Box_rcLWMa">
+                </div>
+                <div class="uinput ub bc-border uba ub-ac" data-control="ICONINPUT" id="iconInput_wNQppb">
+                    <div class="uinn fa sc-text fa-lock" data-control-icon="">
+                    </div>
+                    <input placeholder="" type="password" class="ub-f1" data-control-scope="iconInput_wNQppb" data-bind="value:password">
+                </div>
+                <div class="uinput ub uba ub-ac" data-control="ICONINPUT" id="">
+                   
+                   <div data-bind="for:test" mvvm-scope>
+                       <div data-bind="text:name"></div>
+                   </div>
+                </div>
+                <div class="" data-control="BOX" id="Box_T559OS">
+                </div>
+                
+                
+                
+                <div class="button ub ub-ac bc-text-head ub-pc bc-btn" id="Button_JF4zxM">确定</div>
+                <div id="my-view" data-bind="template:$model">
+                    <!--模板绑定，只读:-->
+                    <script type="text/tmpl">
+                        <%=test.name%>
+                    </script>
+                </div>
+                
+                <div class="form-group">
+                    <label for="username" class="col-lg-2 control-label">Username</label>
+                    <div class="col-lg-10">
+                        <input type="text" class="form-control" id="username" name="username" data-bind="value:username"/>
+                        <span class="help-block hidden"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="col-lg-2 control-label">password</label>
+                    <div class="col-lg-10">
+                        <input type="password" class="form-control" id="password" name="password" data-bind="value:password"/>
+                        <span class="help-block hidden"></span>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        <script src="js/appcan.js">
+        </script>
+        <script src="js/backbone-validation.js">
+        </script>
+        <script src="js/appcan.control.js">
+        </script>
+        <script src="js/appcan.scrollbox.js">
+        </script>
+        <script src="js/template.import.js">
+        </script>
+        <script src="./assets/mvvm/login.js">
+        </script>
+        <script src="./js/login.js">
+        </script>
+    </body>
+
+</html>
